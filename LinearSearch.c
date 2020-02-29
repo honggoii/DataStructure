@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int LSearch(int ar[], int len, int target)
 {
 	int i;
@@ -11,24 +9,4 @@ int LSearch(int ar[], int len, int target)
 	}
 	
 	return -1;			// 찾지 못했음을 의미하는 값 반환
-}
-
-int main(void)
-{
-	int arr[] = { 3,5,2,4,9 };
-	int idx;
-
-	idx = LSearch(arr, sizeof(arr) / sizeof(int), 4);
-	if (idx == -1)
-		printf("탐색 실패 \n");
-	else
-		printf("타겟 저장 인덱스: %d\n", idx);
-
-	idx = LSearch(arr, sizeof(arr) / sizeof(int), 7);
-	if (idx == -1)
-		printf("탐색 실패 \n");
-	else
-		printf("타겟 저장 인덱스: %d\n", idx);
-
-	return 0;
 }
